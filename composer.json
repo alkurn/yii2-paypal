@@ -1,0 +1,30 @@
+{
+    "name": "alkurn/yii2-paypal",
+    "description": "The PayPal extension for the Yii2 framework",
+    "keywords": ["yii2", "paypal"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://gitlab.com/ganesh.alkurn/yii2-paypal/issue",
+        "source": "https://gitlab.com/ganesh.alkurn/yii2-paypal"
+    },
+    "authors": [
+        {
+            "name": "Ganesh",
+            "email": "ganesh.alkurn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+        "yiisoft/yii2": "*",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "paypal/rest-api-sdk-php": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "alkurn\\paypal\\": ""
+        }
+    }
+}
