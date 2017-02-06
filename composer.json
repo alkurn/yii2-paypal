@@ -2,8 +2,7 @@
     "name": "alkurn/yii2-paypal",
     "description": "The PayPal extension for the Yii2 framework",
     "keywords": ["yii2", "paypal"],
-    "type": "yii2-extension",
-    "license": "BSD-3-Clause",
+    "type": "yii2-extension",   
     "support": {
         "issues": "https://github.com/alkurn/yii2-paypal/issue",
         "source": "https://github.com/alkurn/yii2-paypal"
