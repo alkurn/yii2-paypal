@@ -17,7 +17,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": "*",
+        "yiisoft/yii2": "~2.0.6",
         "ext-curl": "*",
         "ext-json": "*",
         "paypal/rest-api-sdk-php": "*"
