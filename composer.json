@@ -5,8 +5,8 @@
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://gitlab.com/ganesh.alkurn/yii2-paypal/issue",
-        "source": "https://gitlab.com/ganesh.alkurn/yii2-paypal"
+        "issues": "https://github.com/alkurn/yii2-paypal/issue",
+        "source": "https://github.com/alkurn/yii2-paypal"
     },
     "authors": [
         {
