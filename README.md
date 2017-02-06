@@ -9,5 +9,5 @@ Installation
 Add to the composer.json file following section:
 
 ```
-"alkurn/yii2-alkurn": "*"
+"alkurn/yii2-paypal": "*"
 ```
