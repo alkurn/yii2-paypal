@@ -9,5 +9,5 @@ Installation
 Add to the composer.json file following section:
 
 ```
-"alkurn/yii2-paypal": "*"
+php composer.phar require --prefer-dist alkurn/yii2-paypal "*"
 ```
