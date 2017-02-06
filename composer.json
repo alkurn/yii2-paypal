@@ -3,6 +3,7 @@
     "description": "The PayPal extension for the Yii2 framework",
     "keywords": ["yii2", "paypal"],
     "type": "yii2-extension",   
+    "license": "Apache-2.0",
     "support": {
         "issues": "https://github.com/alkurn/yii2-paypal/issue",
         "source": "https://github.com/alkurn/yii2-paypal"
@@ -13,7 +14,7 @@
             "email": "ganesh.alkurn@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "1.0.0.0",
     "require": {
         "php": ">=5.6.0",
         "yiisoft/yii2": "*",
