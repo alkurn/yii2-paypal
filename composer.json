@@ -14,7 +14,7 @@
             "email": "ganesh.alkurn@gmail.com"
         }
     ],
-    "minimum-stability": "master",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.6",
