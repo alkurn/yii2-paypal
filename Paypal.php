@@ -24,16 +24,16 @@ class Paypal extends Component
 {
     //region Mode (production/development)
     const MODE_SANDBOX = 'sandbox';
-    const MODE_LIVE    = 'live';
+    const MODE_LIVE = 'live';
     //endregion
     //region Log levels
     /*
      * Logging level can be one of FINE, INFO, WARN or ERROR.
      * Logging is most verbose in the 'FINE' level and decreases as you proceed towards ERROR.
      */
-    const LOG_LEVEL_FINE  = 'FINE';
-    const LOG_LEVEL_INFO  = 'INFO';
-    const LOG_LEVEL_WARN  = 'WARN';
+    const LOG_LEVEL_FINE = 'FINE';
+    const LOG_LEVEL_INFO = 'INFO';
+    const LOG_LEVEL_WARN = 'WARN';
     const LOG_LEVEL_ERROR = 'ERROR';
     //endregion
     //region API settings
@@ -41,12 +41,13 @@ class Paypal extends Component
     public $clientSecret;
     public $isProduction = false;
     public $currency = 'USD';
-    public $mode ;
+    public $mode;
     public $businessEmail;
     public $config = [];
 
     /** @var ApiContext */
     protected $_apiContext = null;
+
     /**
      * @setConfig
      * _apiContext in init() method
@@ -55,6 +56,7 @@ class Paypal extends Component
     {
         $this->setConfig();
     }
+
     /**
      * @inheritdoc
      */
@@ -73,18 +75,23 @@ class Paypal extends Component
         );
 
         $this->_apiContext->setConfig([
-                'mode'                      => $this->mode,
-                'log.LogEnabled'            => YII_DEBUG ? 1 : 0,
-                'log.FileName'              => Yii::getAlias('@runtime/logs/paypal.log'),
-                'log.LogLevel'              => self::LOG_LEVEL_FINE,
+            'mode' => $this->mode,
+            'log.LogEnabled' => YII_DEBUG ? 1 : 0,
+            'log.FileName' => Yii::getAlias('@runtime/logs/paypal.log'),
+            'log.LogLevel' => self::LOG_LEVEL_FINE,
 
-                /*'log.LogLevel' => 'DEBUG',*/ // PLEASE USE `INFO` LEVEL FOR LOGGING IN LIVE ENVIRONMENTS
-                'cache.enabled'             => 'true'
+            /*'log.LogLevel' => 'DEBUG',*/ // PLEASE USE `INFO` LEVEL FOR LOGGING IN LIVE ENVIRONMENTS
+            'cache.enabled' => 'true'
 
-            ]);
+        ]);
 
 
         /*return $this->_apiContext;*/
+    }
+
+    public function getApiContext()
+    {
+        return $this->_apiContext;
     }
 
 }
